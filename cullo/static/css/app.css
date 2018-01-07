@@ -1,0 +1,132 @@
+/**
+ * CSSReset.com - How To Keep Footer At Bottom of Page with CSS
+ * 
+ * Original Tutorial: http://www.cssreset.com/2010/css-tutorials/how-to-keep-footer-at-bottom-of-page-with-css/
+ * License: Free - do whatever you like with it! Credit and linkbacks much appreciated.
+ *
+ * NB: Make sure the value for 'padding-bottom' on #content is equal to or greater than the height of #footer.
+ */
+
+html,
+body {
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+#content {
+	/* padding-bottom:100px; Height of the footer element */
+}
+
+#footer {
+	width:100%;
+	/*height:100px;*/
+	position:fixed;
+	bottom:0;
+	left:0;
+}
+.border-right{border-right: 1px solid grey;}
+div.middle-lgn-frm {
+    padding: 0.5625rem 0;
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: normal;
+    line-height: 1.8;
+    text-align: center;
+}
+.google-sign-in{
+border: 1px solid #dd4b39;
+background: #dd4b39;
+color: white;
+}
+.inner-footer{
+    background-color: #414141;
+}
+.upper-footer{
+    background-color: #8c8c8c;
+}
+.pull-right{
+	text-align: right;
+}
+
+.show-password {
+  width: 100%;
+}
+
+.show-password label {
+  position: absolute;
+  left: -9999px;
+  text-indent: -9999px;
+}
+
+.password-wrapper {
+  position: relative;
+}
+
+.password + .unmask {
+  position: absolute;
+  right: 64px;
+  top: 35%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-indent: -9999px;
+  width: 25px;
+  height: 25px;
+  background: #aaa;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  -webkit-appearance: none;
+}
+
+.password + .unmask:before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 17px;
+  height: 17px;
+  background: #e3e3e3;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.password[type="text"] + .unmask:after {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 13px;
+  height: 13px;
+  background: #aaa;
+  z-index: 2;
+  border-radius: 50%;
+}
+.no-margin-bottom{
+	margin-bottom: -5px;
+}
+textarea {
+    resize: none;
+}
+.cullo-response{
+ padding-left: 75px;	
+}
+
+div::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+div::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 3px rgba(0,0,0,0);
+}
+ 
+div::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
