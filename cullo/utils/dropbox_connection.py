@@ -2,7 +2,7 @@ import dropbox
 
 #from web.utils import variables
 
-from utils import variables
+from cullo.utils import variables
 
 
 def get_dropbox_conn():

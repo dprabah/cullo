@@ -4,14 +4,14 @@ import smtplib
 
 #from web.utils import dropbox_connection
 
-from utils import dropbox_connection, variables
+from cullo.utils import dropbox_connection, variables
 
 mode = (dropbox.files.WriteMode.overwrite)
   
 
 def store_query(query,ip):
     dbx = dropbox_connection.get_dropbox_conn()
-
+    res = ""
     try:
         res = dbx.files_download("/users/queries.txt")
     except dropbox.exceptions.HttpError as err:
